@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36717.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_6Lab_Exceptions_1block", "OOP_6Lab_Exceptions\OOP_6Lab_Exceptions_1block.csproj", "{094BB80C-D0A7-42A6-B88F-B98A8EAFFC59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_6Lab_Exceptions_2block", "OOP_6Lab_Exceptions_2block\OOP_6Lab_Exceptions_2block.csproj", "{89706C3E-B3C8-4CC0-AABE-81153A083537}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{094BB80C-D0A7-42A6-B88F-B98A8EAFFC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{094BB80C-D0A7-42A6-B88F-B98A8EAFFC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{094BB80C-D0A7-42A6-B88F-B98A8EAFFC59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89706C3E-B3C8-4CC0-AABE-81153A083537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89706C3E-B3C8-4CC0-AABE-81153A083537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89706C3E-B3C8-4CC0-AABE-81153A083537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89706C3E-B3C8-4CC0-AABE-81153A083537}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
