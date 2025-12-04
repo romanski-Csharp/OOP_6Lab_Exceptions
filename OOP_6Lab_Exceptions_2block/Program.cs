@@ -7,6 +7,8 @@ namespace OOP_6Lab_Exceptions_2block
         [STAThread]
         static void Main()
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             string folder = Path.Combine(Directory.GetCurrentDirectory(), "ProgramObjects");
 
             Regex regexExtForImage = new Regex("^((bmp)|(gif)|(tiff?)|(jpe?g)|(png))$",
@@ -26,6 +28,8 @@ namespace OOP_6Lab_Exceptions_2block
 
                     string nameOnly = Path.GetFileNameWithoutExtension(fileName);
                     string newFile = Path.Combine(folder, nameOnly + "-mirrored.gif");
+
+                    Console.WriteLine(nameOnly + " відзеркалено успішно");
 
                     image.Save(newFile, System.Drawing.Imaging.ImageFormat.Gif);
 
