@@ -7,16 +7,16 @@ namespace OOP_6Lab_Exceptions_2block
         [STAThread]
         static void Main()
         {
-            String folder = Directory.GetCurrentDirectory();
+            string folder = Path.Combine(Directory.GetCurrentDirectory(), "ProgramObjects");
 
             Regex regexExtForImage = new Regex("^((bmp)|(gif)|(tiff?)|(jpe?g)|(png))$",
                 RegexOptions.IgnoreCase);
 
-            String[] files = Directory.GetFiles(folder);
+            string[] files = Directory.GetFiles(folder);
 
-            foreach (String fileName in files)
+            foreach (string fileName in files)
             {
-                String ext = Path.GetExtension(fileName).TrimStart('.');
+                string ext = Path.GetExtension(fileName).TrimStart('.');
 
                 try
                 {
@@ -24,8 +24,8 @@ namespace OOP_6Lab_Exceptions_2block
 
                     image.RotateFlip(RotateFlipType.RotateNoneFlipX);
 
-                    String nameOnly = Path.GetFileNameWithoutExtension(fileName);
-                    String newFile = Path.Combine(folder, nameOnly + "-mirrored.gif");
+                    string nameOnly = Path.GetFileNameWithoutExtension(fileName);
+                    string newFile = Path.Combine(folder, nameOnly + "-mirrored.gif");
 
                     image.Save(newFile, System.Drawing.Imaging.ImageFormat.Gif);
 
